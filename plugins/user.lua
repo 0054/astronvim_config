@@ -21,6 +21,29 @@ return {
     end,
   },
   {
+    "yorik1984/newpaper.nvim",
+    config = function()
+      require("newpaper").setup({
+        style = "dark",
+        -- background = "hard",
+        ---How much of the background should be transparent. 2 will have more UI
+        ---components be transparent (e.g. status line background)
+        -- transparent_background_level = 1,
+      })
+    end,
+  },
+  {
+    "folke/tokyonight.nvim",
+    config = function()
+      require("tokyonight").setup({
+        -- terminal_colors = true, -- add neovim terminal colors
+        -- background_color = "dark",
+        -- transparent_mode = false,
+        -- background = "hard",
+      })
+    end,
+  },
+  {
     "EdenEast/nightfox.nvim",
     config = function()
       require('nightfox').setup({
