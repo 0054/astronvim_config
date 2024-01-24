@@ -22,7 +22,8 @@ return {
   -- colorscheme = "everforest",
   -- colorscheme = "nightfox",
   -- colorscheme = "newpaper",
-  colorscheme = "tokyonight",
+  -- colorscheme = "tokyonight",
+  colorscheme = "gruvbox-baby",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
