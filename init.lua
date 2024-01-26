@@ -1,4 +1,18 @@
 return {
+  -- settings = {
+  --   pylsp = {
+  --     plugins = {
+  --       pyright = {
+  --         ignore = { "W391" },
+  --         maxLineLength = 120,
+  --       },
+  --       mypy = {
+  --         ignore = { "W391" },
+  --         maxLineLength = 120,
+  --       },
+  --     },
+  --   },
+  -- },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -23,7 +37,8 @@ return {
   -- colorscheme = "nightfox",
   -- colorscheme = "newpaper",
   -- colorscheme = "tokyonight",
-  colorscheme = "gruvbox-baby",
+  -- colorscheme = "gruvbox-baby",
+  colorscheme = "monokai-pro",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
