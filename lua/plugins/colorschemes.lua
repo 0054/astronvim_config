@@ -1,25 +1,20 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
-  -- {
-  --   "neanias/everforest-nvim",
-  --   config = function()
-  --     require("everforest").setup({
-  --       -- background = "hard",
-  --       ---How much of the background should be transparent. 2 will have more UI
-  --       ---components be transparent (e.g. status line background)
-  --       -- transparent_background_level = 1,
-  --     })
-  --   end,
-  -- },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    opts = {
+      dim_inactive = { enabled = true, percentage = 0.25 },
+      highlight_overrides = {
+        mocha = function(c)
+          return {
+            Normal = { bg = c.mantle },
+            Comment = { fg = "#7687a0" },
+            ["@tag.attribute"] = { style = {} },
+          }
+        end,
+      },
+    },
+  },
   {
     "loctvl842/monokai-pro.nvim",
     lazy = false,
